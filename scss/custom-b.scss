@@ -13,12 +13,28 @@ $font-sizes-new: (
   9: $h9-font-size,
   10: $h10-font-size,
 ) ;
-
 $font-sizes :map-merge($font-sizes, $font-sizes-new);
 
+//BORDER
+$border-widths-new: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+  );
+$border-widths :map-merge($border-widths, $border-widths-new );
 
+//BUTTON
+$input-btn-padding-yNew: 0.75rem;
+$input-btn-padding-xNew: 2.5rem;
 
+$btn-padding-y: $input-btn-padding-yNew;      
+$btn-padding-x: $input-btn-padding-xNew;
 
+//GUTTER
+$grid-gutter-widthNew: 0.5rem;
+$grid-gutter-width: $grid-gutter-widthNew;
 
 
 @import "./bootstrap.scss";

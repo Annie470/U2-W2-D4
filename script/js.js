@@ -53,5 +53,16 @@ btndel.addEventListener("click", () => {
 const cardSaldi = document.querySelectorAll("#miaSezione .card");
 cardSaldi.forEach((element) => {
   element.classList.add("border-6");
+  element.classList.add("border-info");
 });
-//BORDO AZZURRO A CARD OFFERTA DEL GGGGGGIORNO
+
+//COLORE EPICODE
+const h2Hero = document.querySelector("#hero h2");
+h2Hero.classList.add("text-epicode1");
+
+//COLORE NASCONDI SEZIONE
+const btnH = document.querySelectorAll(".container h4 + button");
+btnH.forEach((element) => {
+  element.classList.remove("text-info");
+  element.classList.add("text-epicode2");
+});

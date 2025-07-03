@@ -1,6 +1,25 @@
 @import "./functions";
 @import "./variables";
 
+//COLORI
+$infoNew: #00ffea;
+$dangerNew: #ff0077;
+$lightNew :#f3eeff;
+$epicode1 : #5726c3;
+$epicode2 : #8625a5;
+$epicode3 : #cb2376;
+
+$theme-colorsNew: (
+"danger": $dangerNew,
+"info": $infoNew,
+"light": $lightNew,
+"epicode1" : $epicode1,
+"epicode2": $epicode2,
+"epicode3": $epicode3,
+);
+$theme-colors :map-merge($theme-colors, $theme-colorsNew);
+
+
 //FS
 $h7-font-size:  $font-size-base * 1;
 $h8-font-size:  $font-size-base * 0.75;
@@ -36,5 +55,27 @@ $btn-padding-x: $input-btn-padding-xNew;
 $grid-gutter-widthNew: 0.5rem;
 $grid-gutter-width: $grid-gutter-widthNew;
 
+//CARD
+$border-radiusNew: 2rem;
+$border-radius: $border-radiusNew;
 
+$card-bg: $dark; 
+$card-color: $infoNew;
+
+//PILLS
+$badge-border-radius: 10rem;
+$btn-border-radius: 10rem;
+$btn-border-radius-lg: 10rem;
+
+//BK POINT CONTAINER
+$grid-breakpointsNew: (
+  3xl: 1600px,
+  4xl: 1800px,
+);
+$grid-breakpoints :map-merge($grid-breakpoints, $grid-breakpointsNew);
+$container-max-widthsNew: (
+  3xl: 1520px,
+  4xl: 1720px,
+);
+$container-max-widths :map-merge($container-max-widths, $container-max-widthsNew );
 @import "./bootstrap.scss";

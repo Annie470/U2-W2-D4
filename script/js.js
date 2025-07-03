@@ -52,6 +52,7 @@ btndel.addEventListener("click", () => {
 // APPLICA BORDER-6 A TUTTE LE CARD DI SALDI
 const cardSaldi = document.querySelectorAll("#miaSezione .card");
 cardSaldi.forEach((element) => {
+  element.classList.add("border");
   element.classList.add("border-6");
   element.classList.add("border-info");
 });
